@@ -9,11 +9,11 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
+import com.mikhaellopez.circularimageview.CircularImageView;
 
 public class RelaxFragment extends Fragment {
 
-    ImageView imageView_video;
+    CircularImageView clickVideo;
 
 
     public RelaxFragment() {
@@ -26,8 +26,8 @@ public class RelaxFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_relax, container, false);
-        imageView_video = view.findViewById(R.id.imageView2);
-        imageView_video.setOnClickListener(new View.OnClickListener() {
+        clickVideo = view.findViewById(R.id.imageView2);
+        clickVideo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(),Video.class);
