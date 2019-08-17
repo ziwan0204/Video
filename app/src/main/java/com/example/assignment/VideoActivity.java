@@ -1,6 +1,7 @@
 package com.example.assignment;
 
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -8,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.Vector;
 
-public class Video extends AppCompatActivity {
+public class VideoActivity extends AppCompatActivity implements View.OnClickListener{
 
     RecyclerView recyclerView;
     Vector<YouTubeVideos> youtubeVideos = new Vector<>();
@@ -28,5 +29,10 @@ public class Video extends AppCompatActivity {
         VideoAdapter videoAdapter = new VideoAdapter(youtubeVideos);
 
         recyclerView.setAdapter(videoAdapter);
+    }
+
+    @Override
+    public void onClick(View view) {
+
     }
 }

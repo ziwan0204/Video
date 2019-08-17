@@ -30,7 +30,7 @@ public class RelaxFragment extends Fragment {
         clickVideo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(),Video.class);
+                Intent intent = new Intent(getActivity(), VideoActivity.class);
                 startActivity(intent);
             }
         });
